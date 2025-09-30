@@ -11,7 +11,7 @@ phases:
     commands:
       - echo "Starting deploy phase"
       - echo "Configuring kubectl"
-      - aws eks update-kubeconfig --region us-east-1 --name eks2
+      - aws eks update-kubeconfig --region us-east-1 --name demo-eks-cluster-day2
   build:
     commands:
       - echo "Deploying to EKS cluster"
@@ -23,3 +23,4 @@ phases:
 artifacts:
   files:
     - "**/*"
+
